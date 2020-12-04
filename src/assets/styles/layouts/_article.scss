@@ -1,0 +1,132 @@
+.article {
+  background: linear-gradient($grey, $black);
+  color: white;
+  padding-bottom: 100px;
+}
+
+.article__heading {
+  width: 100%;
+  height: 80vh;
+  background: url('/assets/images/patd_wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.article__heading-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article__title {
+  font-size: 4rem;
+  color: white;
+  font-family: $font-family-serif;
+}
+
+.article__title-highlight {
+  color: $accent;
+}
+
+.article__author {
+  font-size: 2rem;
+  color: white;
+  margin-top: 100px;
+}
+
+.article__author-link {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.article__intro {
+  margin-top: 5%;
+
+  @include section-padding;
+}
+
+.article__subtitle {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: $accent;
+}
+
+.article__leaves {
+  @include section-padding;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+
+.article__list {
+  border-left: 4px solid $accent;
+  padding-left: 50px;
+}
+
+.article__list-member {
+  color: $accent;
+}
+
+.article__brendon-era {
+  @include section-padding;
+}
+
+.article__brendon-ryan {
+  display: block;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.article__brendon-ryan-caption {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.article__reunion {
+  @include section-padding;
+}
+
+@media screen and (max-width: 650px) {
+  .article__title {
+    font-size: 3rem;
+  }
+
+  .article__author {
+    margin-top: 50px;
+    font-size: 1.5rem;
+  }
+
+  .article__subtitle {
+    font-size: 2rem;
+  }
+
+  .article__list {
+    padding-left: 20px;
+  }
+
+  .article__list-member {
+    font-size: 1.25rem;
+  }
+
+  .article__brendon-ryan {
+    max-width: 90%;
+  }
+
+  .article__brendon-ryan-caption {
+    max-width: 80%;
+    margin: auto;
+  }
+}

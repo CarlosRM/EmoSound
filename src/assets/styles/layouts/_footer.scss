@@ -1,0 +1,60 @@
+.footer {
+  padding: 30px;
+  background: $grey;
+}
+
+.emosound-logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.emosound-logo__highlight {
+  color: $accent;
+}
+
+.footer__main {
+  display: flex;
+}
+
+.navigation {
+  margin: auto;
+}
+
+.navigation__link {
+  color: white;
+
+  &:hover {
+    color: $accent;
+    text-decoration: none;
+  }
+}
+
+.fab {
+  color: white;
+  font-size: 1.5rem;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.footer__disclaimer {
+  color: $lightGrey;
+}
+
+@media screen and (max-width: 650px) {
+  .footer__main {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .navigation {
+    margin: unset;
+  }
+
+  .emosound-logo {
+    flex: 0 0 100%;
+  }
+}

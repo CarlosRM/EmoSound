@@ -1,0 +1,31 @@
+/**
+ * Import variables
+ */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+@import "variables";
+@import "utils";
+
+/**
+ * Import npm dependencies
+ * see: https://en.parceljs.org/module_resolution.html
+ * see commented examples below
+ */
+@import "@fortawesome/fontawesome-free/css/all.css";
+@import "devicon/devicon.min.css";
+@import "~bootstrap/scss/bootstrap.scss";
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+
+/**
+ * Import layouts
+ * It's a best practice to use a partial for each page
+ */
+@import "./layouts/_home.scss";
+@import "./layouts/_groups.scss";
+@import "./layouts/_article.scss";
+@import "./layouts/footer.scss";
+@import "./layouts/header.scss";
+
+/**
+ * Do NOT include anything else in this file!
+ */
