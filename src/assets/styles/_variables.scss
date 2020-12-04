@@ -17,7 +17,7 @@ $black: #000;
 
 // Bootstrap modifications
 $theme-colors: (
-  "primary": blue // pon el código de color que prefieras
+  "primary": $accent // pon el código de color que prefieras
 );
 
 $blockquote-small-color: $accent;

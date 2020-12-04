@@ -11,9 +11,10 @@
     
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     
-    <title>EmoSound 2021</title>
+    <title>Contacto</title>
   </head>
   <body>
+
     <header class="header">
       <span class="emosound-logo"><span class="emosound-logo__highlight">Emo</span>Sound</span>
 
@@ -49,39 +50,31 @@
           <a class="header__link" href="/article.html">Artículo</a>
         </li>
         <li class="header__mobile-link">
-          <a class="header__link" href="">Extra</a>
+          <a class="header__link" href="/contact.html">Contactp</a>
         </li>
       </ul>
     </nav>
-    <main class="home-main">
-      <div class="festivaltitle">
-        <h1 class="festivaltitle__title"><span class="festivaltitle__highlight">Emo</span>Sound Festival 2021</h1>
-      </div>
-      <div class="flagship">
-        <h2 class="flagship__title"><span class="flagship__t1">Arctic Monkeys My Chemical Romance Panic! at the Disco </span><span class="flagship__t2"> FallOut Boy Linkin Park Bring Me The Horizon Sleeping with Sirens</span><span class="flagship__t3"> Black Veil Brides Pierce the Veil Evanescence</span><span class="flagship__t4"> Asking Alexandria Nightwish A Day To Remember</span></h2>
-      </div>
-      <div class="group1">
-        <img class="group1__logo" src="assets/images/arctic_monkeys_logo.png">
-        <p class="group1__text">Alex Turner y compañía abandonan el estilo más místico de su último álbum y regresan al EmoSound con su naturaleza más rockera, listos para darnos temas como Do I Wanna Know o R U Mine. Si el público lo pide...</p>
-        <a class="group__discover" href="">Descubrir</a>
-      </div>
 
+    <main class="contact">
+      <h1 class="contact__title">Contacto</h1>
+      <form name="contact" method="POST" data-netlify="true" class="contact-form">
+        <div class="form-group">
+            <label for="name">Nombre: </label>
+            <input id="name" class="form-control" type="text" name="name" placeholder="Carlos Roldán"/>
+        </div>
 
-      <div class="home-group-card group2">
-        <div class="home-group-card__overlay">
-          <img class="home-group-card__logo src=" src="assets/images/patd_logo_light.png">
-          <p class="home-group-card__text">Brendon Urie viene con las cuerdas vocales listas para dar espéctaculo y sorprendernos con sus canciones más emo de sus primeros álbumes, AFYCSO y Vices and Virtues. ¡Disfrutad 'Sinners'!</p>
-          <a class="home-group-card__discover" href="">Descubrir</a>
-          </p>
-        </div class="home-group-card__overlay">
-      </div>
-      <div class="home-group-card group3">
-        <div class="home-group-card__overlay">
-          <img class="home-group-card__logo src=" src="assets/images/mcr_logo.png">
-          <p class="home-group-card__text">Killjoys, ¡haced ruido! Gerard Way y el grupo se reúnen tras años de sequía musical para deleitarnos con sus temas más intensos de The Black Parade y Three Cheers for Sweet Revenge. ¿Estáis esperando la nota G?</p>
-          <a class="home-group-card__discover" href="">Descubrir</a>
-        </div class="home-group-card__overlay">
-      </div>
+        <div class="form-group">
+          <label>Email: </label>
+          <input id="email" class="form-control" type="email" name="email" placeholder="ejemplo@gmail.com"/>
+        </div>
+        <div class="form-group">
+          <label>Mensaje: </label>
+          <textarea class="form-control .form-control-lg contact__message" name="message" placeholder="¡Cuéntanos lo que te apetezca!"></textarea>
+        </div>
+        <div class="form-group text-center">
+          <button type="submit" class="contact__submit btn btn-primary">Enviar</button>
+        </div>
+      </form>
     </main>
 
     <footer class="footer">
@@ -99,7 +92,7 @@
               <a class="navigation__link" href="/article.html">Artículo</a>
             </li>
             <li class="list-inline-item">
-              <a class="navigation__link" href="/contact.html">Contacto</a>
+              <a class="navigation__link" href="">Extra</a>
             </li>
 
           </ul>
